@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relish — Administration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-body">
+
+  <header class="admin-header">
+    <div class="container admin-header-inner">
+      <div class="brand">
+        <span class="brand-crest">R</span>
+        <span class="brand-text">
+          <strong>RELISH</strong>
+          <small>ADMINISTRATION</small>
+        </span>
+      </div>
+      <div class="admin-header-right">
+        <a href="/" target="_blank" class="btn btn-outline btn-sm">View Site →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <section class="stats-grid" id="statsGrid"></section>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="orders">Orders</button>
+      <button class="tab" data-tab="reservations">Reservations</button>
+      <button class="tab" data-tab="tables">Tables</button>
+      <button class="tab" data-tab="menu">Menu</button>
+      <button class="tab" data-tab="reviews">Reviews</button>
+      <button class="tab" data-tab="messages">Messages</button>
+    </nav>
+
+    <section id="tab-orders" class="tab-panel"></section>
+    <section id="tab-reservations" class="tab-panel" hidden></section>
+    <section id="tab-tables" class="tab-panel" hidden></section>
+    <section id="tab-menu" class="tab-panel" hidden></section>
+    <section id="tab-reviews" class="tab-panel" hidden></section>
+    <section id="tab-messages" class="tab-panel" hidden></section>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
